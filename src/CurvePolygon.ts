@@ -7,7 +7,7 @@ import * as cgeo from 'cgeo';
 export class CurvePolygon extends cgeo.CurvePolygon {
 
 	writeWKT() {
-		return(cgeo.Polygon.prototype.writeWKT.call(this));
+		return(cgeo.MultiCurve.prototype.writeWKT.call(this));
 	}
 
 }

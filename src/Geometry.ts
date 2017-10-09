@@ -5,7 +5,7 @@ import * as cgeo from 'cgeo';
 
 export type This = Geometry & cgeo.Geometry;
 
-@cgeo.mixin(cgeo.Geometry as { new(): cgeo.Geometry })
+@cgeo.mixin(cgeo.Geometry as any as { new(): cgeo.Geometry })
 export class Geometry {
 
 	writeWKT() { return(''); }

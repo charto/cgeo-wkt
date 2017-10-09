@@ -7,7 +7,7 @@ import * as cgeo from 'cgeo';
 export class Polygon extends cgeo.Polygon {
 
 	writeWKT() {
-		return(cgeo.MultiCurve.prototype.writeWKT.call(this));
+		return(cgeo.MultiLineString.prototype.writeWKT.call(this));
 	}
 
 	@cgeo.proto(cgeo.GeometryKind.lineString)
