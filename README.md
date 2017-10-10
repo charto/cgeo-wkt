@@ -1,7 +1,12 @@
 cgeo-wkt
 ========
 
+[![npm version](https://img.shields.io/npm/v/cgeo-wkt.svg)](https://www.npmjs.com/package/cgeo-wkt)
+
 Adds WKT export support to [cgeo](https://github.com/charto/cgeo).
+
+This augments all geometry types (in a TypeScript-friendly way)
+with a `toWKT` method returning a string.
 
 Usage
 -----
