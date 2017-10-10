@@ -10,4 +10,7 @@ export class CurvePolygon extends cgeo.CurvePolygon {
 		return(cgeo.MultiCurve.prototype.writeWKT.call(this));
 	}
 
+	@cgeo.proto(cgeo.GeometryKind.lineString)
+	defaultWKT: cgeo.GeometryKind;
+
 }
