@@ -2,12 +2,13 @@
 // Released under the MIT license, see LICENSE.
 
 import * as cgeo from 'cgeo';
+import { State } from './Geometry';
 
 @cgeo.mixin()
 export class CompoundCurve extends cgeo.CompoundCurve {
 
-	writeWKT() {
-		return(cgeo.MultiCurve.prototype.writeWKT.call(this));
+	writeWKT(state: State) {
+		return(cgeo.MultiCurve.prototype.writeWKT.call(this, state));
 	}
 
 	@cgeo.proto(cgeo.GeometryKind.lineString)
